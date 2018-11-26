@@ -226,7 +226,7 @@ type State = {
    */
   loaded: number[],
   /**
-   * Trak whether the keyboard is visible to show and hide the tab bar.
+   * Track whether the keyboard is visible to show and hide the tab bar.
    */
   keyboard: boolean,
 };
