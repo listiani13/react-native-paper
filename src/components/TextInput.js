@@ -218,7 +218,7 @@ class TextInput extends React.Component<Props, State> {
       // The label should be minimized if the text input is focused, or has text
       // In minimized mode, the label moves up and becomes small
       if (this.state.value || this.state.focused || this.props.error) {
-        this._minmizeLabel();
+        this._minimizeLabel();
       } else {
         this._restoreLabel();
       }
@@ -298,7 +298,7 @@ class TextInput extends React.Component<Props, State> {
       useNativeDriver: true,
     }).start();
 
-  _minmizeLabel = () =>
+  _minimizeLabel = () =>
     Animated.timing(this.state.labeled, {
       toValue: 0,
       duration: BLUR_ANIMATION_DURATION,
